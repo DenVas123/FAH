@@ -23,5 +23,5 @@ Note that this tool is in very early stages of prototyping and is probably not g
 
 Due to not being a perfect emulation some of the binaries and scripts in the emulated firmware may not work as intended. 
 
-To clean program from extracted files run ./clean.sh This is automatically run every time the program is started.
+To clean program from extracted files run ./clean.sh This is automatically executed every time the program is started.
 
