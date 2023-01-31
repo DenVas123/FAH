@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ./clean.sh
-binwalk -e --run-as=root "${1}" > /dev/null 2>&1
+binwalk -e "${1}" > /dev/null 2>&1
 file ./_"${1}".extracted/squashfs-root/bin/busybox > log1.txt
 
 
