@@ -19,7 +19,7 @@ Instructions:
 
 
 
-Note that this tool is in very early stages of prototyping and is probably not going to work as expected for some firmware. Adjust scripts if necessary.
+Note that this tool is in very early stages of prototyping and is probably not going to work as expected for some firmware. Adjust scripts if necessary. I recommend using a virtual machine in case something in the program breaks something.
 
 Due to not being a perfect emulation some of the binaries and scripts in the emulated firmware may not work as intended. 
 
