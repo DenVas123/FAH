@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#Removes all extracted firmware or tar images created during operation of hte program. Cleans out logs
 exec 3>&1 &>/dev/null
 sudo rm -r *.extracted
 sudo rm -r *.tar.gz

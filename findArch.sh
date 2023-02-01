@@ -1,6 +1,9 @@
 #!/bin/bash
 
 sudo ./clean.sh
+
+#Extract squashfs-root and analyse busybox binary in it.
+
 binwalk -e "${1}" > /dev/null 2>&1
 file ./_"${1}".extracted/squashfs-root/bin/busybox > log1.txt
 
@@ -13,6 +16,8 @@ MSB='MSB'
 LSB='LSB'
 
 edianess=$( grep 'MSB\|LSB' log1.txt)
+
+#Determines architecture and edianess from log file
 
 if [[ "$result" == *"$MIPS"* ]]
 then
@@ -33,10 +38,14 @@ then
 else
 	echo "wrong architecture"
 fi
- 
+
+#Stores squash-fs in a tar archive and copies it to a specified place
+
 tar -zcvf "${1}".tar.gz _"${1}".extracted/squashfs-root
 
 cp "${1}".tar.gz ./extracted
+
+#Run qemu with the required architecture
 
 sudo ./run.sh "$ARCH"
 

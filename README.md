@@ -4,7 +4,7 @@ By using the program you agree to the conditions specified in LICENSE.txt
 
 This software was developed and tested on UBUNTU 18.04 using primarily the TP-Link Archer A7 Archer A7(US)_V5_210519 
 
-This program aims to streamline automated penetration testing in of binaries in firmware through the use of full system qemu emulation
+This program aims to streamline automated penetration testing of router firmware binaries through the use of full system qemu emulation
 
 Instructions:
 1) Open Terminal

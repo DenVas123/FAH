@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#This is an in developemnt script that builds a qemu image from a root-fs file extracted from the firmware. The qemu image currently does not seem to work, likely isnt built entirely correctly.
+
 source ./FAH.config
 
 TARBALL_SIZE=$(tar ztvf "${1}" --totals 2>&1 |tail -1|cut -f4 -d' ')

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#makes required directories
+
 mkdir extracted
 mkdir linux
 mkdir ./linux/Mips
@@ -7,6 +9,7 @@ mkdir ./linux/Mipsel
 mkdir ./linux/Arm
 mkdir ./linux/Armel
 
+#downloads precompiled kernels and images for all architectures
 
 wget -P ./linux/Mips https://people.debian.org/~aurel32/qemu/mips/debian_wheezy_mips_standard.qcow2
 wget -P ./linux/Mips https://people.debian.org/~aurel32/qemu/mips/vmlinux-3.2.0-4-4kc-malta
@@ -18,6 +21,8 @@ wget -P ./linux/Arm https://people.debian.org/~aurel32/qemu/armhf/vmlinuz-3.2.0-
 wget -P ./linux/Armel https://people.debian.org/~aurel32/qemu/armel/debian_wheezy_armel_standard.qcow2
 wget -P ./linux/Armel https://people.debian.org/~aurel32/qemu/armel/initrd.img-3.2.0-4-versatile
 wget -P ./linux/Armel https://people.debian.org/~aurel32/qemu/armel/vmlinuz-3.2.0-4-versatile
+
+#installs required packages
 
 sudo apt install binwalk -y
 sudo apt install qemu-system-mips -y
