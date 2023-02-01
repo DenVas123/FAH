@@ -5,6 +5,8 @@ mkdir linux
 mkdir ./linux/Mips
 mkdir ./linux/Mipsel
 mkdir ./linux/Arm
+mkdir ./linux/Armel
+
 
 wget -P ./linux/Mips https://people.debian.org/~aurel32/qemu/mips/debian_wheezy_mips_standard.qcow2
 wget -P ./linux/Mips https://people.debian.org/~aurel32/qemu/mips/vmlinux-3.2.0-4-4kc-malta
@@ -13,7 +15,9 @@ wget -P ./linux/Mipsel https://people.debian.org/~aurel32/qemu/mipsel/vmlinux-3.
 wget -P ./linux/Arm https://people.debian.org/~aurel32/qemu/armhf/debian_wheezy_armhf_standard.qcow2
 wget -P ./linux/Arm https://people.debian.org/~aurel32/qemu/armhf/initrd.img-3.2.0-4-vexpress
 wget -P ./linux/Arm https://people.debian.org/~aurel32/qemu/armhf/vmlinuz-3.2.0-4-vexpress
-
+wget -P ./linux/Armel https://people.debian.org/~aurel32/qemu/armel/debian_wheezy_armel_standard.qcow2
+wget -P ./linux/Armel https://people.debian.org/~aurel32/qemu/armel/initrd.img-3.2.0-4-versatile
+wget -P ./linux/Armel https://people.debian.org/~aurel32/qemu/armel/vmlinuz-3.2.0-4-versatile
 
 sudo apt install binwalk -y
 sudo apt install qemu-system-mips -y
