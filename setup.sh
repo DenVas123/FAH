@@ -35,3 +35,12 @@ sudo apt-get install libqt4-opengl python3-opengl python3-pyqt4 python3-pyqt4.qt
 sudo apt-get install mtd-utils gzip bzip2 tar arj lhasa p7zip p7zip-full cabextract cramfsswap squashfs-tools sleuthkit default-jdk lzop srecord -y
 sudo apt install sshpass -y
 sudo apt-get install openssh-server -y
+
+
+#installs binwalk deps
+cd ..
+cd binwalk
+sudo ./deps.sh
+cd ..
+cd FAH
+

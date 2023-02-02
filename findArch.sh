@@ -36,7 +36,8 @@ then
 		ARCH="arm"
 	fi
 else
-	echo "wrong architecture"
+	echo "Unable to determine architecture, possibly error extracting squashfs-root, firmware could be encrypted or in a weird format"
+	exit
 fi
 
 #Stores squash-fs in a tar archive and copies it to a specified place
