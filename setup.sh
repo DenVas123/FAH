@@ -38,9 +38,5 @@ sudo apt-get install openssh-server -y
 
 
 #installs binwalk deps
-cd ..
-cd binwalk
-sudo ./deps.sh
-cd ..
-cd FAH
+../binwalk/deps.sh
 
