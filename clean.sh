@@ -14,4 +14,5 @@ sudo rm ./extracted/.tar.gz
 sudo rm *.tar.xz
 sudo rm log*
 sudo rm 1.txt
+sudo pkill -9 -f qemu
 
