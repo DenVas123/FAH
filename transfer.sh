@@ -8,3 +8,4 @@
 sshpass -proot scp -r -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -P 2222 ./extracted/* root@127.0.0.1:/root/squashfs-root 
 sshpass -proot scp -r -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -P 2222 ./chroot.sh root@127.0.0.1:/root
 
+

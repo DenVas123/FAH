@@ -27,3 +27,6 @@ Due to not being a perfect emulation some of the binaries and scripts in the emu
 
 To clean program from extracted files run ./clean.sh This is automatically executed every time the program is started.
 
+
+Note: Arm architecture is not working entirely as intended. Big endian firmware does not work with the -nographic option but so a separate qemu window will open. Little endian ARM emulation is having problems with using ssh to transfer files to it. 
+
