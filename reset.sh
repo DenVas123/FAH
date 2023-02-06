@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Used during development, deleted installed kernels and iumages to stop them from being commited to github.
+#Used during development, deletes installed kernels and images to stop them from being commited to github.
 
 sudo rm ./linux/Mips/*
 sudo rm ./linux/Mipsel/*

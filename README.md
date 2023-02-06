@@ -12,8 +12,8 @@ Instructions:
 4) If this is the first time using FAH run sudo ./setup.sh to download prerequisites
 3) Copy firmware .bin file into FAH directory
 4) run ./start.sh <firmware.bin>    eg. start.sh Archer.bin
-5) This should start a qemu machine with a similar kernel and image. Login with credentials: "root" "root".Open another terminal
-6) cd FAH; ./transfer.sh in the new terminal. If needed, type in yes, and then root as the password
+5) This should start a qemu machine with a similar kernel and image. Login with credentials: "root" "root".
+6) Open another terminal; cd FAH; ./transfer.sh in the new terminal. If needed, type in yes, and then root as the password
 7) In the QEMU emulation, ./chroot.sh
 8) Done, enjoy testing firmware binaries
 
@@ -28,5 +28,9 @@ Due to not being a perfect emulation some of the binaries and scripts in the emu
 To clean program from extracted files run ./clean.sh This is automatically executed every time the program is started.
 
 
-Note: Arm architecture is not working entirely as intended. Big endian firmware does not work with the -nographic option but so a separate qemu window will open. Little endian ARM emulation is having problems with using ssh to transfer files to it. 
+Known Issues: 
+
+Arm architecture is not working entirely as intended. Big endian firmware does not work with the -nographic option but so a separate qemu window will open. Little endian ARM emulation is having problems with using ssh to transfer files to it. 
+
+Encrypted firmware is unable to be automatically extracted with this tool.
 
