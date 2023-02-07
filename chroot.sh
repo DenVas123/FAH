@@ -1,3 +1,4 @@
 #!/bin/bash
-tar -xf squashfs-root
-chroot ~/*/squashfs-root /bin/sh
+tar -xzvf squashfs-root
+mv ./*.extracted ./firmware
+chroot ~/firmware/squashfs-root /bin/sh
