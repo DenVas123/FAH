@@ -30,7 +30,7 @@ To clean program from extracted files run ./clean.sh This is automatically execu
 
 Known Issues: 
 
-Arm architecture is not working entirely as intended. Big endian firmware does not work with the -nographic option but so a separate qemu window will open. Little endian ARM emulation is having problems with using ssh to transfer files to it. 
+Some newer Armel firmware does not work due to the emulated board having a fairly old cpu
 
 Encrypted firmware is unable to be automatically extracted with this tool.
 
