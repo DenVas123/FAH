@@ -47,10 +47,10 @@ fi
 echo "Architecture = ${ARCH}"
 #Stores squash-fs in a tar archive and copies it to a specified place
 echo "Copying squashfs-root"
+cp libnvram.so ./_"${1}".extracted/squashfs-root/libnvram.so>>log1.txt
 tar -zcvf "${1}".tar.gz _"${1}".extracted/squashfs-root >> log1.txt
 
 cp "${1}".tar.gz ./extracted >>log1.txt
-
 #Run qemu with the required architecture
 echo "Running QEMU, please wait"
 sleep 3s

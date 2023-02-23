@@ -37,6 +37,3 @@ sudo apt install sshpass -y
 sudo apt-get install openssh-server -y
 
 
-#installs binwalk deps
-../binwalk/deps.sh
-
