@@ -1,0 +1,26 @@
+#!/bin/ash
+
+# This script runs when init it run during the boot process.
+# Mounts everything in the fstab
+mount -a
+mount -o remount +w /
+
+# Mount the RAM filesystem to /tmp
+mount -t tmpfs tmpfs /tmp
+
+# copy all files in the mnt folder to the etc folder
+cp -a /mnt/* /etc
+mkdir -p /var/etc
+mkdir -p /var/firm
+mkdir -p /var/log
+mkdir -p /var/misc
+mkdir -p /var/run
+mkdir -p /var/sbin
+mkdir -p /var/tmp
+mkdir -p /tmp/var
+
+#/bin/echo "Init System..."
+system_manager &
+
+#/bin/echo "Start tftpd..."
+tftpd &

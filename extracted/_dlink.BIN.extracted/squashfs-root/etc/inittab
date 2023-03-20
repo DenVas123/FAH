@@ -1,0 +1,4 @@
+::sysinit:/etc/rc.d/rcS
+ttyS0::askfirst:/bin/ash
+#::shutdown:/etc/ath/killVAP all
+#::shutdown:/bin/umount -a

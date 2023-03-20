@@ -1,0 +1,5 @@
+/proc    /proc       proc     defaults    0 0
+none     /var        ramfs    defaults    0 0
+none     /etc        ramfs    defaults    0 0
+none     /www        ramfs    defaults    0 0
+devpts   /dev/pts    devpts   mode=0622   0 0
